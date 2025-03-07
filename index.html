@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Dice - Tirage au sort pour Daily</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Daily Dice 🎲</h1>
+            <p>Tirage au sort pour la prise de parole au daily</p>
+        </header>
+        
+        <div class="input-section">
+            <input type="text" id="member-name" placeholder="Nom du membre">
+            <button id="add-member">Ajouter</button>
+        </div>
+        
+        <div class="members-section">
+            <h2>Membres de l'équipe</h2>
+            <ul id="members-list"></ul>
+        </div>
+        
+        <div class="action-buttons">
+            <button id="select-random" class="primary">Tirer au sort</button>
+            <button id="reset-selection">Réinitialiser</button>
+        </div>
+        
+        <div class="result-section">
+            <h2>Résultat</h2>
+            <div id="result" class="result"></div>
+        </div>
+
+        <div class="history-section">
+            <h3>Historique des tirages</h3>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>Daily Dice - Fait avec ❤️</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

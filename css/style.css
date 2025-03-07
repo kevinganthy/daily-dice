@@ -1,0 +1,165 @@
+:root {
+    --primary-color: #4a6fa5;
+    --secondary-color: #166088;
+    --accent-color: #4cb5ae;
+    --light-color: #f5f5f5;
+    --dark-color: #333;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.input-section {
+    display: flex;
+    margin-bottom: 1.5rem;
+    gap: 0.5rem;
+}
+
+.input-section input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+}
+
+button.primary {
+    background-color: var(--accent-color);
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+}
+
+button.primary:hover {
+    background-color: #3da09a;
+}
+
+.members-section, .result-section, .history-section {
+    margin-bottom: 2rem;
+}
+
+h2, h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#members-list li {
+    background-color: white;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.delete-btn {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.result {
+    background-color: white;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.highlight {
+    animation: highlight 1.5s ease;
+}
+
+@keyframes highlight {
+    0% { background-color: var(--accent-color); color: white; transform: scale(1); }
+    50% { background-color: var(--accent-color); color: white; transform: scale(1.05); }
+    100% { background-color: white; color: var(--dark-color); transform: scale(1); }
+}
+
+#history-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: var(--dark-color);
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .input-section {
+        flex-direction: column;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+    }
+}
