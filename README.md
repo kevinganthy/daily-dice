@@ -1,5 +1,7 @@
 # Daily Dice
 
+:warning: Code entierrement généré par IA avec Copilot Edit ! Aucun changement humain n'a été apporté.
+
 Un outil simple pour tirer au sort les membres de l'équipe lors des réunions daily.
 
 ## Fonctionnalités
